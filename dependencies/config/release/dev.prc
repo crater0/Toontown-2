@@ -19,7 +19,7 @@ vfs-mount resources/server /server
 model-path /
 
 # Server:
-server-version 1.8.0
+server-version 1.9.0
 min-access-level 700
 accountdb-type developer
 shard-low-pop 50
@@ -34,7 +34,7 @@ dc-file dependencies/astron/dclass/tt2.dc
 
 # Core features:
 want-pets #t
-want-parties #f
+want-parties #t
 want-cogdominiums #t
 want-lawbot-cogdo #t
 want-anim-props #t

@@ -22,22 +22,23 @@ RESISTANCE_RESTOCK = 1
 RESISTANCE_MONEY = 2
 RESISTANCE_TICKETS = 3
 RESISTANCE_MERITS = 4
-resistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY, RESISTANCE_TICKETS, RESISTANCE_MERITS]
+RESISTANCE_DANCE = 5
+resistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY, RESISTANCE_TICKETS, RESISTANCE_MERITS, RESISTANCE_DANCE]
 randomResistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY, RESISTANCE_TICKETS]
 resistanceDict = {
     RESISTANCE_TOONUP: {
         'menuName': TTLocalizer.ResistanceToonupMenu,
         'itemText': TTLocalizer.ResistanceToonupItem,
         'chatText': TTLocalizer.ResistanceToonupChat,
-        'values': [10, 20, 40, 80, -1],
-        'items': [0, 1, 2, 3, 4]
+        'values': [10, 20, 40, 60, 80, 100, 120, 130, -1],
+        'items': [0, 1, 2, 3, 4, 5, 6, 7, 8]
     },
     RESISTANCE_MONEY: {
         'menuName': TTLocalizer.ResistanceMoneyMenu,
         'itemText': TTLocalizer.ResistanceMoneyItem,
         'chatText': TTLocalizer.ResistanceMoneyChat,
-        'values': [100, 200, 350, 600, 1200, 2400],
-        'items': [0, 1, 2, 3, 4, 5]
+        'values': [100, 200, 350, 600, 1200, 2400, 3000, 3200, 3400, 3600, 4000],
+        'items': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     },
     RESISTANCE_RESTOCK: {
         'menuName': TTLocalizer.ResistanceRestockMenu,
@@ -77,8 +78,15 @@ resistanceDict = {
         'menuName': TTLocalizer.ResistanceTicketsMenu,
         'itemText': TTLocalizer.ResistanceTicketsItem,
         'chatText': TTLocalizer.ResistanceTicketsChat,
-        'values': [200, 400, 600, 800, 1200],
-        'items': [0, 1, 2, 3, 4]
+        'values': [200, 400, 600, 800, 1200, 1600, 2000],
+        'items': [0, 1, 2, 3, 4, 5, 6]
+    },
+    RESISTANCE_DANCE: {
+        'menuName': TTLocalizer.ResistanceDanceMenu,
+        'itemText': TTLocalizer.ResistanceDanceItem,
+        'chatText': TTLocalizer.ResistanceDanceChat,
+        'values': ['Dance'],
+        'items': [0]
     }
 }
 
@@ -197,7 +205,7 @@ def doEffect(textId, speakingToon, nearbyToons):
             p = effect.getParticlesNamed(name)
             p.renderer.setFromNode(icon)
         fadeColor = VBase4(0, 0, 1, 1)
-    elif menuIndex == RESISTANCE_MERITS:
+    if menuIndex == RESISTANCE_MERITS:
         effect = BattleParticles.loadParticleFile('resistanceEffectSprite.ptf')
         cogModel = loader.loadModel('phase_3/models/gui/cog_icons')
         cogModel.setScale(0.75)
@@ -217,7 +225,7 @@ def doEffect(textId, speakingToon, nearbyToons):
 
         fadeColor = VBase4(0.7, 0.7, 0.7, 1.0)
         cogModel.removeNode()
-    elif menuIndex == RESISTANCE_TICKETS:
+    if menuIndex == RESISTANCE_TICKETS:
         effect = BattleParticles.loadParticleFile('resistanceEffectSprite.ptf')
         model = loader.loadModel('phase_6/models/karting/tickets')
         model.flattenLight()
@@ -228,6 +236,13 @@ def doEffect(textId, speakingToon, nearbyToons):
             p.renderer.setFromNode(icon)
 
         fadeColor = VBase4(1, 1, 0, 1)
+    elif menuIndex == RESISTANCE_DANCE:
+        effect = BattleParticles.loadParticleFile('resistanceEffectSparkle.ptf')
+        fadeColor = VBase4(1, 0.5, 1, 1)
+        for toonId in nearbyToons:
+            toon = base.cr.doId2do.get(toonId)
+            if toon and not toon.ghostMode:
+               toon.setAnimState('victory')
     else:
         return
     recolorToons = Parallel()

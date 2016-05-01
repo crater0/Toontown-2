@@ -69,7 +69,7 @@ class SuitPlannerInteriorAI:
                 activeDict['type'] = type
                 activeDict['track'] = bldgTrack
                 activeDict['level'] = level
-                activeDict['revives'] = random.choice([0, 1, 2, 3, 4])
+                activeDict['revives'] = random.choice([0, 1, 2, 3, 4, 5])
                 activeDicts.append(activeDict)
 
             infoDict['activeSuits'] = activeDicts

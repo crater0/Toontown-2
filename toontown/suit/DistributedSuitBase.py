@@ -80,6 +80,11 @@ class DistributedSuitBase(DistributedAvatar.DistributedAvatar, Suit.Suit, SuitBa
         elif self.getSkeleRevives() == 4:
             nameInfo = TTLocalizer.SuitBaseNameWithLevel % {'name': self.name,
              'dept': self.getStyleDept(),
+             'level': '%s%s' % (self.getActualLevel(), TTLocalizer.SkeleRevivePostFix4)}
+            self.setDisplayName(nameInfo)
+        elif self.getSkeleRevives() == 5:
+            nameInfo = TTLocalizer.SuitBaseNameWithLevel % {'name': self.name,
+             'dept': self.getStyleDept(),
              'level': '%s%s' % (self.getActualLevel(), TTLocalizer.SkeleRevivePostFixUltimate)}
             self.setDisplayName(nameInfo)
         else:

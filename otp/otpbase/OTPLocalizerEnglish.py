@@ -139,7 +139,7 @@ GlobalSpeedChatName = 'SpeedChat'
 SCMenuPromotion = 'PROMOTIONAL'
 SCMenuEmotions = 'EMOTIONS'
 SCMenuCustom = 'MY PHRASES'
-SCMenuResistance = 'UNITE!'
+SCMenuResistance = 'UNITES'
 SCMenuPets = 'PETS'
 SCMenuPetTricks = 'TRICKS'
 SCMenuCog = 'COG SPEAK'
@@ -1247,6 +1247,14 @@ SpeedChatStaticTextToontown = {100: 'Hi!',
  10017: "Do the windy thing!",
  10018: "Reality is an illusion, the universe is a hologram, buy gold, BYE!",
  10019: "They will know the joy of creation.",
+ 10020: "The cold never bothered me anyway!",
+ 10021: "Do you want to build a snowman?",
+ 10022: "Love is an open door!",
+ 10023: "We finish each other's sandwiches!",
+ 10024: "It's called a hustle, sweetheart.",
+ 10025: "What do you call a three-humped camel? Pregnant!",
+ 10026: "Life isn't some cartoon musical where you sing a little song and all your insipid dreams magically come true. So let it go.",
+ 10027: "It's the eye of the tiger, the thrill of the fight!",
  20000: SuitBrushOffs[None][0],
  20001: SuitBrushOffs[None][1],
  20002: SuitBrushOffs[None][2],

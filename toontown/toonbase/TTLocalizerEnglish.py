@@ -1895,6 +1895,7 @@ SellbotSkelP = 'Sellbot Skelecogs'
 SkeleRevivePostFix = 'XR Alpha'
 SkeleRevivePostFix2 = 'XR Beta'
 SkeleRevivePostFix3 = 'XR Gamma'
+SkeleRevivePostFix4 = 'XR Delta'
 SkeleRevivePostFixUltimate = 'XR Ultimate'
 SkeleRevivePreFix = 'XR'
 AvatarDetailPanelOK = lOK
@@ -3576,7 +3577,7 @@ PartyActivityNameDict = {0: {'generic': 'Jukebox',
  6: {'generic': 'Party Fireworks',
      'invite': 'Party Fireworks',
      'editor': 'Fireworks',
-     'description': 'Launch your very own fireworks show!'},
+     'description': 'Launch your own fireworks show!'},
  7: {'generic': 'Party Clock',
      'invite': 'a Party Clock',
      'editor': 'Party Clock',
@@ -3584,7 +3585,7 @@ PartyActivityNameDict = {0: {'generic': 'Jukebox',
  8: {'generic': 'Deluxe Jukebox',
      'invite': 'a deluxe jukebox',
      'editor': 'Deluxe Jukebox',
-     'description': 'Your own deluxe jukebox with double the tunes for double the deal!'},
+     'description': 'Your own deluxe jukebox with double the tunes!'},
  9: {'generic': 'Dance Floor\n20 moves',
      'invite': 'a 20 move Dance Floor',
      'editor': 'Dance Floor - 20',
@@ -3833,32 +3834,30 @@ ExtraOptionsPageTitle = 'Extra'
 Extra2OptionsPageTitle = 'Extra 2'
 OptionsTabTitle = 'Options\n& Codes'
 OptionsPageExitToontown = 'Exit Toontown'
-OptionsPageMusic = 'Music Volume:'
-OptionsPageSFX = 'SFX Volume:'
-OptionsPageSFXOnLabel = 'Sound Effects are on.'
-OptionsPageSFXOffLabel = 'Sound Effects are off.'
-OptionsPageToonChatSoundsOnLabel = 'Type Chat Sounds- On.'
-OptionsPageToonChatSoundsOffLabel = 'Type Chat Sounds- Off.'
-OptionsPageFriendsEnabledLabel = 'Friend Requests- On.'
-OptionsPageFriendsDisabledLabel = 'Friend Requests- Off.'
+OptionsPageMusic = 'Music Volume-'
+OptionsPageSFX = 'SFX Volume-'
+OptionsPageToonChatSoundsOnLabel = 'Type Chat Sounds- On'
+OptionsPageToonChatSoundsOffLabel = 'Type Chat Sounds- Off'
+OptionsPageFriendsEnabledLabel = 'Friend Requests- On'
+OptionsPageFriendsDisabledLabel = 'Friend Requests- Off'
 OptionsPageWhisperEnabledLabel = 'Whispers- Anyone'
 OptionsPageWhisperDisabledLabel = 'Whispers- Friends'
 OptionsPageSpeedChatStyleLabel = 'SpeedChat Color'
-OptionsPageDisplayWindowed = 'windowed'
+OptionsPageDisplayWindowed = 'Windowed'
 OptionsPageSelect = 'Select'
 OptionsPageToggleOn = 'Turn On'
 OptionsPageToggleOff = 'Turn Off'
 OptionsPageChange = 'Change'
-OptionsPageDisplaySettings = 'Display: %(screensize)s, %(api)s'
-OptionsPageDisplaySettingsNoApi = 'Display: %(screensize)s'
+OptionsPageDisplaySettings = 'Display- %(screensize)s, %(api)s'
+OptionsPageDisplaySettingsNoApi = 'Display- %(screensize)s'
 OptionsPageExitConfirm = 'Exit Toontown?'
 DisplaySettingsTitle = 'Display Settings'
 DisplaySettingsIntro = 'The following settings are used to configure the way Toontown is displayed on your computer.  It is usually unnecessary to adjust these unless you are experiencing a problem.'
 DisplaySettingsIntroSimple = 'You may adjust the screen resolution to a higher value to improve the clarity of text and graphics in Toontown, but depending on your graphics card, some higher values may make the game run less smoothly or may not work at all.'
-DisplaySettingsApi = 'Graphics API:'
-DisplaySettingsResolution = 'Resolution:'
+DisplaySettingsApi = 'Graphics API-'
+DisplaySettingsResolution = 'Resolution-'
 DisplaySettingsWindowed = 'In a window'
-DisplaySettingsFullscreen = 'Full screen'
+DisplaySettingsFullscreen = 'Fullscreen'
 DisplaySettingsApply = 'Apply'
 DisplaySettingsCancel = lCancel
 DisplaySettingsApplyWarning = 'When you press OK, the display settings will change.  If the new configuration does not display properly on your computer, the display will automatically return to its original configuration after %s seconds.'
@@ -7375,6 +7374,9 @@ ResistanceMoneyChat = 'Toons of the World, Spend Wisely!'
 ResistanceTicketsMenu = 'Tickets'
 ResistanceTicketsItem = '%s Tickets'
 ResistanceTicketsChat = 'Toons of the World, Go Race!'
+ResistanceDanceMenu = 'Dance'
+ResistanceDanceItem = 'Make them %s'
+ResistanceDanceChat = 'Toons of the World, Dance!'
 ResistanceEmote1 = NPCToonNames[9228] + ': Welcome to the Resistance!'
 ResistanceEmote2 = NPCToonNames[9228] + ': Use your new emote to identify yourself to other members.'
 ResistanceEmote3 = NPCToonNames[9228] + ': Good luck!'
