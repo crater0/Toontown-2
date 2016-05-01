@@ -93,3 +93,13 @@ Donald's Dreamland, Goofy Speedway, Chip and Dale's Minigolf, Minnie's Melodylan
 8. Fixed Bug with In-Game News, by implementing CentralLogger
 9. New Display Resolutions
 10. Changed Glove Cost to 500 Jellybeans
+
+1.9.0:
+1. Parties
+2. Implemented Re-Org Cog Attack for Big Wigs and Legal Eagles
+3. Buffed Gags to balance their damage level so they can defeat XR Cogs a bit faster
+4. Support in the XR Operating System for XR Delta Cogs
+5. Text Fixes for Options Page
+6. New Speedchat Phrases for Famous Quotes Section
+7. New Dance Unite
+8. Updated Values for Unites

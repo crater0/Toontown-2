@@ -7,6 +7,5 @@ single-player remake of Disney's Toontown Online
 
 # Thanks
 
-Thanks To Disney, Toontown Offline, Toontown Rewritten, Toontown Infinite, Toontown Fellowship, Toontown Stride, 
+Thanks To Disney, Toontown Offline, Toontown Rewritten, Toontown Infinite, Toontown Fellowship, Toontown Stride, Toontown World Online, 
 and the Toontown community for making this game possible and to keep the Toontown spirit alive.
-
